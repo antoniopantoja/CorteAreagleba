@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Corte de Gleba</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link href="./Gleba.css" rel="css">
+  <link rel="stylesheet" href="./Gleba.css">
+</head>
+<body>
+  <div id="map_canvas" style="height: 100vh;"></div>
+  <div class="botao-flutuante">
+    <a class="botao azul" onclick="startDrawing()">Área</a>
+    <a class="botao amarelo" onclick="startCutting()">Gleba</a>
+    <a class="botao vermelho" onclick="startCut()">Cortar</a>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvG876rYwOGyOg7Fby6ujBvYB2YYzDAkY&libraries=geometry,drawing"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+  <script src="./Gleba.js"></script>
+</body>
+</html>
